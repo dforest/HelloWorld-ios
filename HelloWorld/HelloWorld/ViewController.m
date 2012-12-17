@@ -18,6 +18,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"Hello World！";
+    [label sizeToFit];
+    label.center = self.view.center;
+    [self.view addSubview:label];
+
 }
 
 - (void)didReceiveMemoryWarning
